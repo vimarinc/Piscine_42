@@ -9,8 +9,8 @@
 /*   Updated: 2014/09/17 21:21:59 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 #include "ft.h"
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
