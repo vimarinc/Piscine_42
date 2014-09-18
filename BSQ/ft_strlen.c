@@ -1,17 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghubault <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/09/17 21:21:57 by ghubault          #+#    #+#             */
-/*   Updated: 2014/09/17 21:21:59 by ghubault         ###   ########.fr       */
+/*   Created: 2014/09/17 21:22:12 by ghubault          #+#    #+#             */
+/*   Updated: 2014/09/17 21:22:13 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+#include "ft.h"
 
-void	ft_putchar(char c)
+int		ft_strlen(char *str)
 {
-	write(1, %c, 1);
+	int cpt;
+
+	cpt = 0;
+	while (*str != '\0')
+	{
+		str++;
+		cpt++;
+	}
+	return (cpt);
 }

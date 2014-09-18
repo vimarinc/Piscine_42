@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghubault <ghubault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ghubault <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/09/15 11:38:30 by ghubault          #+#    #+#             */
-/*   Updated: 2014/09/15 11:38:31 by ghubault         ###   ########.fr       */
+/*   Created: 2014/09/17 21:22:31 by ghubault          #+#    #+#             */
+/*   Updated: 2014/09/17 21:22:33 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft.h"
 
-char	**ft_print_x(char **carre, char **str, int x, int y)
+void	ft_putstr(char *str)
 {
-	int tmpy;
-
-	tmpy = y;
-	**carre = **str;
-	while (carre[x][y] != 'o')
+	int	i;
+    
+	i = 0;
+	while (str[i] != '\0')
 	{
-		while (y > 0)
-		{
-			carre[x][y] = 'x';
-			y--;
-		}
-		y = tmpy;
-		x--;
+		ft_putchar(str[i]);
+		i++;
 	}
-	return (carre);
 }

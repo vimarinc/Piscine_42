@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_size_n.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghubault <ghubault@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ghubault <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/09/15 11:38:43 by ghubault          #+#    #+#             */
-/*   Updated: 2014/09/15 11:38:44 by ghubault         ###   ########.fr       */
+/*   Created: 2014/09/17 21:21:57 by ghubault          #+#    #+#             */
+/*   Updated: 2014/09/17 21:21:59 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <unistd.h>
 #include "ft.h"
 
-int		ft_size_n(char *str)
+void	ft_putchar(char c)
 {
-	int cpt;
-	int y;
-
-	y = 0;
-	cpt = 0;
-	while (str[y] != '\n')
-		str++;
-	str++;
-	while (str[y] != '\n')
-	{
-		y++;
-		cpt++;
-	}
-	return (cpt);
+	write(1, &c, 1);
 }

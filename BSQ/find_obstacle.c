@@ -9,24 +9,20 @@
 /*   Updated: 2014/08/20 18:51:19 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "ft.h"
 #include <stdio.h>
 
 int		find_obstacle(char **str, int x, int y)
 {
-	//int cpt;
-
-	//cpt = 0;
 	while (str[y][x] != 'o' && str[y][x] != '\n')
+	{
 		y++;
 		if (str[y][x] == 'o')
-		{
-			//cpt = y;
 			return (y);
-		}
 		else
 			return (0);
+	}
+	return (0);
 }
 
 char	**find_obstacle_ultimate(char **str, int x, int y)
@@ -36,7 +32,7 @@ char	**find_obstacle_ultimate(char **str, int x, int y)
 	carre = str;
 	while (find_obstacle(str, x, y) == 0)
 	{
-		y = find_obstacle(str, x, y);	
+		y = find_obstacle(str, x, y);
 		x++;
 		printf("%d", y);
 	}

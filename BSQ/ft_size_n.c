@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_size_n.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ghubault <ghubault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/08/18 19:39:27 by sdurr             #+#    #+#             */
-/*   Updated: 2014/08/20 19:15:11 by sdurr            ###   ########.fr       */
+/*   Created: 2014/09/15 11:38:43 by ghubault          #+#    #+#             */
+/*   Updated: 2014/09/15 11:38:44 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "ft.h"
 
 int		ft_size_n(char *str)

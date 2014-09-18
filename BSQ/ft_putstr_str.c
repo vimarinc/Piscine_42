@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_str.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghubault <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/09/17 21:22:31 by ghubault          #+#    #+#             */
-/*   Updated: 2014/09/17 21:22:33 by ghubault         ###   ########.fr       */
+/*   Created: 2014/09/17 21:22:50 by ghubault          #+#    #+#             */
+/*   Updated: 2014/09/17 21:22:54 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr_str(char **str)
 {
-	int	i;
-    
-	i = 0;
-	while (str[i] != '\0')
+	int x;
+	int y;
+
+	x = 0;
+	y = 0;
+	while (str[x][y] != '\0')
 	{
-		ft_putchar(str[i]);
-		i++;
+		y = 0;
+		ft_putstr(str[y]);
+		x++;
 	}
 }

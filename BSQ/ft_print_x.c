@@ -1,15 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_carre.c                                   :+:      :+:    :+:   */
+/*   ft_print_x.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ghubault <ghubault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/08/20 11:09:14 by sdurr             #+#    #+#             */
-/*   Updated: 2014/08/20 13:51:04 by sdurr            ###   ########.fr       */
+/*   Created: 2014/09/15 11:38:30 by ghubault          #+#    #+#             */
+/*   Updated: 2014/09/15 11:38:31 by ghubault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "ft.h"
 
 char	**ft_print_x(char **carre, char **str, int x, int y)
@@ -18,7 +17,7 @@ char	**ft_print_x(char **carre, char **str, int x, int y)
 
 	tmpy = y;
 	**carre = **str;
-	while(carre[x][y] != 'o')
+	while (carre[x][y] != 'o')
 	{
 		while (y > 0)
 		{

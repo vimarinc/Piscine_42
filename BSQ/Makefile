@@ -10,16 +10,21 @@
 #                                                                              #
 #******************************************************************************#
 
-NAME=		BSQ
+NAME =		bsq
 
-HPATH=		ft.h 
+HPATH =		ft.h 
 
-SRCS=		*.c
+SRCS =		*.c
 
-FLAGS=		-Wall -Wextra -Werror
+OBJS = 		*.o
 
-all:
-	gcc $(FLAGS) $(SRCS) -o $(NAME)
+FLAGS =		-Wall -Wextra -Werror
+
+all: $(NAME)
+
+$(NAME):	
+		gcc $(FLAGS) -c $(SRCS) -I.
+		gcc $(FLAGS) -o $(NAME) -I. $(OBJS)
 
 clean:
 
